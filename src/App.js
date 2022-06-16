@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const stuff = () => {
+    console.log('DEFERRED PROMPT FOUND', window.deferredPrompt);
+    window.deferredPrompt.prompt();
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +16,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={stuff}>INSTALL ME</button>S
         <a
           className="App-link"
           href="https://reactjs.org"
